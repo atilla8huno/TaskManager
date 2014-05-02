@@ -1,0 +1,23 @@
+﻿CREATE TABLE chamado (
+	id SERIAL NOT NULL PRIMARY KEY,
+	rg_militar VARCHAR(9),
+	data DATE NOT NULL,
+	corporacao SMALLINT NOT NULL,
+	projeto VARCHAR(14) NOT NULL,
+	chamado VARCHAR(9) NOT NULL,
+	caso_mantis VARCHAR(9),
+	descricao TEXT NOT NULL,
+	desenvolvedor VARCHAR(45),
+	problema TEXT NOT NULL,
+	solucao TEXT,
+	palavra_chave VARCHAR(45),
+	data_criacao DATE NOT NULL,
+	data_atribuicao DATE,
+	data_conclusao DATE,
+	data_teste DATE,
+	data_correcao DATE,
+	data_homologacao_disp DATE,
+	data_homologacao_cliente DATE,
+	data_producao DATE,
+	data_finalizacao DATE
+);
